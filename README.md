@@ -44,32 +44,33 @@ Accessing the Application:
 Once the application is operational, you can reach it by launching your web browser and going to http://localhost:5000.
 Error Handling:
 
-*The Flask application manages custom error handling for a range of HTTP error codes, including:
+The Flask application manages custom error handling for a range of HTTP error codes, including:
 	404 (Not Found)
 	401 (Unauthorized)
 	400 (Bad Request)
 	500 (Internal Server Error)
 	403 (Forbidden)
-	422	(Unprocessable Entity)
-	429	(Too Many Requests)
+	422  (Unprocessable Entity)
+	429  (Too Many Requests)
 
 Authentication:
 
-*The Flask application offers a user authentication system that relies on JSON Web Tokens (JWT).
-*Access to the following routes is provided:
+The Flask application offers a user authentication system that relies on JSON Web Tokens (JWT).
+Access to the following routes is provided:
 	*/login (POST) - This route is utilized for logging in by providing a username and password. In the case of valid credentials, it will furnish a JWT access token.
 	*/protected (GET) - This route is safeguarded and mandates the presence of a valid JWT token. To gain access, you must include the JWT token within the request header.
-*For testing the application, you can employ tools like Postman or cURL to transmit HTTP requests that include JWT tokens.
-*Application Configuration:
+For testing the application, you can employ tools like Postman or cURL to transmit HTTP requests that include JWT tokens.
+Application Configuration:
 	*The secret key used for JWT tokens is configured within the app.config['JWT_SECRET_KEY'] variable. In a production setting, it is advisable to replace it with your secret key.
 	*The user authentication process in this example is designed for simplicity, and in a real-world application, it should be replaced with a proper user database.
+ 
 File Handling:
 
-*The Flask application offers a feature for uploading files and provides the following endpoints:
+The Flask application offers a feature for uploading files and provides the following endpoints:
 	*/upload-form (GET) - This route exhibits an HTML form designed for file uploads.
 	*/upload (POST) - Utilize this route for the purpose of file uploads. To evaluate the file upload functionality, you can employ this route to submit files.
 
-*Application Configuration:
+Application Configuration:
 
 	*The application is structured to accept files with specific extensions as defined in the ALLOWED_EXTENSIONS set, such as png, jpg, and jpeg.
 	*A maximum file size of 10MB (10 * 1024 * 1024 bytes) is established as the allowable limit, and this value can be adjusted via the MAX_CONTENT_LENGTH variable.
@@ -78,12 +79,12 @@ File Handling:
 
 Open Access Route:
 
-*The Flask application offers an uncomplicated route accessible at /public/items (GET) for obtaining a collection of publicly available items. The content of this list can be tailored within the PublicRoute.py file to meet specific requirements. 
-*Should the need arise, both the list of public items and the application's functionality can be adapted to accommodate more intricate data structures.
+The Flask application offers an uncomplicated route accessible at /public/items (GET) for obtaining a collection of publicly available items. The content of this list can be tailored within the PublicRoute.py file to meet specific requirements. 
+Should the need arise, both the list of public items and the application's functionality can be adapted to accommodate more intricate data structures.
 
 
 Services Overview:
 
-*The Flask application serves as a gateway to communicate with a MySQL database for restaurant management. It facilitates operations like restaurant creation, retrieval, updating, and deletion through dedicated routes. 
-*To test and engage with the application, you can employ tools such as Postman for making API requests.
-*Feel free to adapt and enhance the application to support additional intricate data and features according to your requirements.
+The Flask application serves as a gateway to communicate with a MySQL database for restaurant management. It facilitates operations like restaurant creation, retrieval, updating, and deletion through dedicated routes. 
+To test and engage with the application, you can employ tools such as Postman for making API requests.
+Feel free to adapt and enhance the application to support additional intricate data and features according to your requirements.
