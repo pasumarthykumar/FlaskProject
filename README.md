@@ -42,6 +42,8 @@ The application will be accessible by entering http://localhost:5000 in your web
 Accessing the Application:
 
 Once the application is operational, you can reach it by launching your web browser and going to http://localhost:5000.
+
+
 Error Handling:
 
 The Flask application manages custom error handling for a range of HTTP error codes, including:
