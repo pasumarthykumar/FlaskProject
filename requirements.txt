@@ -1,0 +1,47 @@
+1.Flask:
+
+Flask is a Python web framework designed for building web applications. It simplifies web development by providing tools and libraries for tasks like routing, handling requests and responses.
+
+2.SQLAlchemy:
+
+SQLAlchemy is a widely-used Python library, known as an Object-Relational Mapping (ORM) tool. It simplifies interactions with relational databases by offering a high-level, database-agnostic interface.
+
+3.sqlalchemy.text:
+
+This code imports the text function from SQLAlchemy. It's used for crafting SQL queries in a textual format, which can be executed as raw SQL statements when necessary.
+
+4.jsonify:
+
+Jsonify is a Flask function that converts Python dictionaries and data structures into JSON responses. These JSON responses are sent back as part of HTTP responses.
+
+5.abort:
+
+The abort function is used in Flask to generate HTTP error responses with specific status codes, making it easier to handle errors during web application requests.
+
+6.request:
+
+The request object, provided by Flask, represents the incoming HTTP request. It's a versatile tool for accessing various aspects of the request, such as form data and query parameters.
+
+7.werkzeug.exceptions.NotFound:
+
+This package includes the NotFound exception, which is used to create HTTP 404 (Not Found) error responses. It's part of the Werkzeug library that Flask is built upon.
+
+8.Flask JWT Extended (flask_jwt_extended):
+
+Flask JWT Extended is an extension for Flask, specifically designed to simplify JSON Web Token (JWT) management. JWTs are commonly used for authentication and authorization in web applications.
+
+9.JWTManager:
+
+JWTManager is a class provided by Flask JWT Extended that enables the configuration and management of JWT settings, making it easier to implement JWT-based authentication.
+
+10.create_access_token:
+
+This function, offered by Flask JWT Extended, is used to generate new JWT access tokens. These tokens are crucial for secure user authentication.
+
+11.jwt_required:
+
+The jwt_required decorator, part of Flask JWT Extended, adds an extra layer of security to routes by requiring a valid JWT token for access. This helps protect sensitive areas of a web application.
+
+12.get_jwt_identity:
+
+The get_jwt_identity function, integrated with Flask JWT Extended, allows developers to retrieve the identity, often the user's username, stored within a valid JWT token.
